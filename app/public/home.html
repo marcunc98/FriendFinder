@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder App</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>
+                <img class="social" src="https://cdn0.iconfinder.com/data/icons/global-top-brands/90/facebook-logo-128.png" height="75">Friend Finder</h1>
+            <hr>
+            <h2>Answer a few basic questions</h2>
+            <h2>Then find the friend with the greatest compatibility!</h2>
+            <br>
+            <a href="/survey">
+                <button class="btn btn-lg btn-primary">
+                    <span class="glyphicon glyphicon-ok"></span>Go to Survey</button>
+            </a>
+        </div>
+
+        <!-- src="facebook-logo-128.png" -->
+
+
+        <script type="text/javascript">
+            // QUESTION: What is this code doing?
+            $("#search-btn").on("click", function () {
+                var searchedCharacter = $("#character-search").val().trim();
+
+                // Using a RegEx Pattern to remove spaces from searchedCharacter
+                // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+                searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+
+                // QUESTION: What does $.get do? What are the parameters it is expecting?
+                $.get("/api/characters/" + searchedCharacter, function (data) {
+                    console.log(data);
+                    if (data) {
+                        $("#stats").show();
+                        $("#name").text(data.name);
+                        $("#role").text(data.role);
+                        $("#age").text(data.age);
+                        $("#force-points").text(data.forcePoints);
+                    }
+                    else {
+                        $("#name").text("The force is not strong with this one. Your character was not found.");
+                        $("#stats").hide();
+                    }
+                });
+            });
+        </script>
+
+</body>
+
+</html>
