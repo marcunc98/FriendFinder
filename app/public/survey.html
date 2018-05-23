@@ -39,12 +39,12 @@
 
                             <div class="form-group">
                                 <label for="name">Name (Required)</label>
-                                <input type="text" name "" class="form-control" id="name" required>
+                                <input type="text" id="name" class="form-control" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="role">Link to Photo Image (Required)</label>
-                                <input type="text" name "" class="form-control" id="role" required>
+                                <input type="text" id="photo" class="form-control" required>
                             </div>
                             <hr>
                             <h3>
@@ -52,7 +52,7 @@
                             </h3>
                             <h4>You are an uninhibited risk taker</h4>
                             <select data-placeholder="" class="chosen-select" id="q1">
-                                <option value></option>
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -83,8 +83,8 @@
                                 <strong>Question 2</strong>
                             </h3>
                             <h4>You enjoy the finer things in life</h4>
-                            <select class="chosen-select" id="q2">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q2">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -103,8 +103,8 @@
                                 <strong>Question 3</strong>
                             </h3>
                             <h4>Aliens and ghost are real</h4>
-                            <select class="chosen-select" id="q3">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q3">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -120,11 +120,11 @@
                                 </a>
                             </div>
                             <h3>
-                            <strong>Question 4</strong>
+                                <strong>Question 4</strong>
                             </h3>
                             <h4>Dessert is a major food group</h4>
-                            <select class="chosen-select" id="q4">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q4">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -140,11 +140,11 @@
                                 </a>
                             </div>
                             <h3>
-                            <strong>Question 5</strong>
+                                <strong>Question 5</strong>
                             </h3>
                             <h4>You enjoying being active</h4>
-                            <select class="chosen-select" id="q5">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q5">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -160,11 +160,11 @@
                                 </a>
                             </div>
                             <h3>
-                            <strong>Question 6</strong>
+                                <strong>Question 6</strong>
                             </h3>
                             <h4>If you don’t have a daily agenda, you procrastinate</h4>
-                            <select class="chosen-select" id="q6">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q6">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -180,11 +180,11 @@
                                 </a>
                             </div>
                             <h3>
-                            <strong>Question 7</strong>
+                                <strong>Question 7</strong>
                             </h3>
                             <h4>You believe in treating people like you want to be treated</h4>
-                            <select class="chosen-select" id="q7">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q7">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -200,11 +200,11 @@
                                 </a>
                             </div>
                             <h3>
-                            <strong>Question 8</strong>
+                                <strong>Question 8</strong>
                             </h3>
                             <h4>You have a good relationship with parents (family)</h4>
-                            <select class="chosen-select" id="q8">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q8">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -220,11 +220,11 @@
                                 </a>
                             </div>
                             <h3>
-                            <strong>Question 9</strong>
+                                <strong>Question 9</strong>
                             </h3>
                             <h4>Love is a figment of people’s imagination</h4>
-                            <select class="chosen-select" id="q9">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q9">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -240,11 +240,11 @@
                                 </a>
                             </div>
                             <h3>
-                            <strong>Question 10</strong>
+                                <strong>Question 10</strong>
                             </h3>
                             <h4>Relationships take hard work</h4>
-                            <select class="chosen-select" id="q10">
-                                <option value></option>
+                            <select data-placeholder="" class="chosen-select" id="q10">
+                                <option value=""></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -282,91 +282,120 @@
             </div>
         </div>
 
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+          </button>     -->
+
+        <!-- Modal -->
+<div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="results-modal">Your Celebrity Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="http://hq-wall.net/i/med_thumb/02/10/Amerie_374222.jpg" alt""> 
+          <!-- https://i.pinimg.com/originals/3d/1a/52/3d1a526d572cd56545e87c8cbc9aff34.jpg-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
         <script type="text/javascript">
 
-         
-    // Chosen CSS
-    var config = {
-      ".chosen-select": {},
-      ".chosen-select-deselect": {
-        allow_single_deselect: true
-      },
-      ".chosen-select-no-single": {
-        disable_search_threshold: 10
-      },
-      ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
-      },
-      ".chosen-select-width": {
-        width: "95%"
-      }
-    };
 
-    for (var selector in config) {
-      $(selector).chosen(config[selector]);
-    }
+            // Chosen CSS
+            // var config = {
+            //   ".chosen-select": {},
+            //   ".chosen-select-deselect": {
+            //     allow_single_deselect: true
+            //   },
+            //   ".chosen-select-no-single": {
+            //     disable_search_threshold: 10
+            //   },
+            //   ".chosen-select-no-results": {
+            //     no_results_text: "Oops, nothing found!"
+            //   },
+            //   ".chosen-select-width": {
+            //     width: "95%"
+            //   }
+            // };
 
-    // Capture the form inputs
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
+            // for (var selector in config) {
+            //     $(selector).chosen(config[selector]);
+            // }
 
-      // Form validation
-      function validateForm() {
-        var isValid = true;
-        $(".form-control").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
+            // Capture the form inputs
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
+               
+                // Form validation
+                function validateForm() {
+                    var isValid = true;
+                    $(".form-control").each(function () {
+                        if ($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
 
-        $(".chosen-select").each(function() {
+                    $(".chosen-select").each(function () {
 
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-        return isValid;
-      }
+                        if ($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+                    return isValid;
+                }
 
-      // If all required fields are filled
-      if (validateForm()) {
-        // Create an object for the user"s data
-        var userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()
-          ]
-        };
+                // If all required fields are filled
+                if (validateForm()) {
+                    // Create an object for the user"s data
+                    var userData = {
+                        name: $("#name").val(),
+                        photo: $("#photo").val(),
+                        scores: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
+                        ]
+                    };
 
-        // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function(data) {
+                    alert("Answers Submitted!")
+                    // AJAX post the data to the friends API.
+                    $.post("/api/friends", userData, function (data) {
 
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
+                        
+                        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                        $("#match-name").text(data.name);
+                        $("#match-img").attr("src", data.photo);
 
-          // Show the modal with the best match
-          $("#results-modal").modal("toggle");
+                        // Show the modal with the best match
+                        $("#results-modal").modal("toggle");
 
-        });
-      } else {
-        alert("Please fill out all fields before submitting!");
-      }
-    });
-  
+                    });
+                } else {
+                    alert("Please fill out all fields before submitting!");
+                }
+            });
 
-    
+
+
         </script>
 
 </body>

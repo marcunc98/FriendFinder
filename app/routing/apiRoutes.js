@@ -25,8 +25,38 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.post("/api/friends", function(req, res) {
-       // req.body is available since we're using the body-parser middleware
-    
+    // req.body is available since we're using the body-parser middleware
+    var match = {
+      name: "",
+      photo: "",
+      scoreDiff: 1000
+    };
+
+    console.log(req.body);
+
+    var userData = req.body;
+    var userScores = userData.scores;
+
+    console.log(userScores);
+
+    var totalDiff = 0;
+
+    for (var i = 0; i < friendsData.length; i++) {
+      console.log(friendsData[i]);
+      totalDiff = 0;
+
+      for (var j = 0; j < friendsData[i].scores[j]; j++) {
+        totalDiff += Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j])
+        );
+        if ((totalDiff += match.scoreDiff)) {
+          match.name = friendsData[i].name;
+          match.photo = friendsData[i].photo;
+          match.scoreDiff = totalDiff;
+        }
+      }
+    }
+    friendsData.push(userData);
+
+    res.json(match);
   });
- 
-  };
+};
