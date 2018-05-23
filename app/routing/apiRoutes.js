@@ -29,7 +29,7 @@ module.exports = function(app) {
     var match = {
       name: "",
       photo: "",
-      scoreDiff: 1000
+      scoreDiff: 500
     };
 
     console.log(req.body);
@@ -48,15 +48,19 @@ module.exports = function(app) {
       for (var j = 0; j < friendsData[i].scores[j]; j++) {
         totalDiff += Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j])
         );
-        if ((totalDiff += match.scoreDiff)) {
+        if ((totalDiff <= match.scoreDiff)) {
           match.name = friendsData[i].name;
           match.photo = friendsData[i].photo;
           match.scoreDiff = totalDiff;
+          console.log("This is the userscore:" + userScores)
+          
         }
       }
     }
     friendsData.push(userData);
+    console.log(userData);
 
     res.json(match);
+    console.log("The chosen Match:" + match.name)
   });
 };

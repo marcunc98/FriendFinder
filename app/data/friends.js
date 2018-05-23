@@ -50,7 +50,7 @@ var friendsArray = [
   {
     name: "Meagan",
     photo:
-      "http://dlisted.com/wp-content/uploads/2017/09/wenn22696357.jpg",
+      "http://www.celebplasticsurgeryonline.com/wp-content/uploads/2016/12/Meagan-Good-plastic-surgery-12.jpg",
     scores: [2, 5, 5, 2, 5, 5, 1, 1, 1, 2]
   },
   {
